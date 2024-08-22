@@ -19,6 +19,8 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
 
+
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),  # o que está escrito na tupla é ('url','view')
 ] + static(settings.MEDIA_URL, documents_root=settings.MEDIA_ROOT)
